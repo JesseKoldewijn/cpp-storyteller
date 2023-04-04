@@ -3,10 +3,8 @@ import { platform } from "node:process";
 import path from "path";
 
 export const runExec = () => {
-	const execFileName = "cpp-storyteller";
 	if (platform == "win32") {
 		const execFilePath = path.resolve("./build/Debug/Cpp-StoryTeller.exe");
-		return;
 		exec(`${execFilePath}`, (error, stdout, stderr) => {
 			if (error) {
 				console.log(`error: ${error.message}`);
@@ -20,7 +18,7 @@ export const runExec = () => {
 		});
 	} else if (platform == "linux") {
 		const execFilePath = path.resolve("./build/Cpp-StoryTeller");
-		exec(`${execFilePath}`, (error, stdout, stderr) => {
+		exec(`sh ${execFilePath}`, (error, stdout, stderr) => {
 			if (error) {
 				console.log(`error: ${error.message}`);
 				return;
