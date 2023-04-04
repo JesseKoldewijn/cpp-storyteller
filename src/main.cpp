@@ -1,5 +1,5 @@
-#include <iostream>
 #include <chrono>
+#include <iostream>
 #include <thread>
 
 using namespace std;
@@ -15,14 +15,14 @@ int main(int, char**) {
     // Init section
     string string1 = "Initializing";
     string string1_2 = "..........\n";
-    typed_text(string1,200);
-    typed_text(string1_2,375);
+    typed_text(string1, 200);
+    typed_text(string1_2, 375);
 
     // Wipe screen content of init section
     clear_screen();
 
     string string2 = "Hello and welcome to Cpp StoryTeller!";
-    typed_text(string2,200);
+    typed_text(string2, 200);
 
     sleep_for(500ms);
 }
