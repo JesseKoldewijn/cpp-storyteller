@@ -6,7 +6,7 @@
   </a>
 </p>
 
-> This project is a simple text-based story teller. Don't worry, it will only tell one story ;)
+> This project is a simple text-based story teller. Don't worry, it will only tell one story.
 
 ## Author
 

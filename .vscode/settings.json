@@ -1,7 +1,6 @@
 {
     "files.associations": {
         ".htaccess": "bat",
-        "*.astro": "astro",
         "algorithm": "cpp",
         "atomic": "cpp",
         "bit": "cpp",

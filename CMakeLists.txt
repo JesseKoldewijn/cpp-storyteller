@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(clang-test VERSION 0.0.1)
+project(Cpp-StoryTeller VERSION 0.0.1)
 
 include(CTest)
 enable_testing()
 
-add_executable(clang-test main.cpp)
+add_executable(Cpp-StoryTeller ./src/main.cpp)
 
-install(TARGETS clang-test)
+install(TARGETS Cpp-StoryTeller)
 
 enable_testing()
 add_test(NAME main COMMAND main)

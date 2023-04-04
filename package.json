@@ -1,0 +1,26 @@
+{
+  "name": "cpp-storyteller",
+  "version": "0.0.1",
+  "description": "This project is a simple text-based story teller. Don't worry, it will only tell one story",
+  "private": true,
+  "scripts": {
+    "dev": "cd ./build/Debug/ && Cpp-StoryTeller.exe",
+    "build": "cmake -S . -B ./build",
+    "proman": "node proman.mjs"
+  },
+  "keywords": [
+    "cpp",
+    "c++",
+    "cmake"
+  ],
+  "author": "Jesse Koldewijn",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/node": "^18.15.11"
+  },
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "commander": "^10.0.0",
+    "conf": "^11.0.1"
+  }
+}
