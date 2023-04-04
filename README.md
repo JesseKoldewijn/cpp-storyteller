@@ -12,8 +12,8 @@
 
 👤 **Jesse Koldewijn**
 
-* Website: https://jkinsight.nl
-* Github: [@JesseKoldewijn](https://github.com/JesseKoldewijn)
+-   Website: https://jkinsight.nl
+-   Github: [@JesseKoldewijn](https://github.com/JesseKoldewijn)
 
 ## Show your support
 
