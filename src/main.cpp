@@ -17,12 +17,19 @@ int main(int, char**) {
     string string1_2 = "..........\n";
     typed_text(string1, 200);
     typed_text(string1_2, 375);
+    // End - Init section
 
     // Wipe screen content of init section
     clear_screen();
 
+    // Welcome section
     string string2 = "Hello and welcome to Cpp StoryTeller!";
     typed_text(string2, 200);
+    // End - Welcome section
 
-    sleep_for(500ms);
+    // Sleeping for a bit to allow some peace while reading
+    sleep_for(5s);
+
+    // Exiting out of program
+    exit(0);
 }
