@@ -5,6 +5,7 @@
 	},
 	"files.associations": {
 		"*.cpp": "cpp",
+		"*.h": "cpp",
 		"thread": "cpp"
 	}
 }
