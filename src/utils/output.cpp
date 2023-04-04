@@ -2,6 +2,10 @@
 #include <chrono>
 #include <thread>
 
+using namespace std;
+using namespace std::this_thread;
+using namespace std::chrono;
+
 #include <stdlib.h>
 
 #include <cstdint>
@@ -15,7 +19,6 @@ void clear_screen () {
         system("cls");
     #elif defined (__LINUX__) || defined(__gnu_linux__) || defined(__linux__)
         system("clear");
-        // std::cout<< u8"\033[2J\033[1;1H"; // Using ANSI Escape Sequences 
     #elif defined (__APPLE__)
         system("clear");
     #endif
@@ -23,12 +26,12 @@ void clear_screen () {
 
 /**
  * Typing text animation which std:cout's the given text_to_print input.
- * @param text_to_print Type: std::string | Desc: Text that will be printed to the screen.
- * @param typing_speed Type: std::int32_t | Desc: Typingspeed in ms.
+ * @param text_to_print Type: string | Desc: Text that will be printed to the screen.
+ * @param typing_speed Type: int32_t | Desc: Typingspeed in ms.
 */
-void typed_text (std::string text_to_print, std::int32_t typing_speed) {
+void typed_text (string text_to_print, int32_t typing_speed) {
     for (const auto c : text_to_print) {
-        std::wcout << c << std::flush;
-        std::this_thread::sleep_for(std::chrono::milliseconds(typing_speed));
+        wcout << c << flush;
+        sleep_for(milliseconds(typing_speed));
     }
 }
