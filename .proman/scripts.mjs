@@ -19,7 +19,7 @@ export const runExec = () => {
 			console.log(stdout);
 		});
 	} else if (platform == "linux") {
-		const execFilePath = path.resolve("./build/Debug/Cpp-StoryTeller.sh");
+		const execFilePath = path.resolve("./build/Cpp-StoryTeller");
 		exec(`${execFilePath}`, (error, stdout, stderr) => {
 			if (error) {
 				console.log(`error: ${error.message}`);
