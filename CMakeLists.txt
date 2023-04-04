@@ -1,12 +1,12 @@
 cmake_minimum_required(VERSION 3.0.0)
-project(Cpp-StoryTeller VERSION 0.0.1)
+project(cpp-storyteller VERSION 0.0.1)
 
 include(CTest)
 enable_testing()
 
-add_executable(Cpp-StoryTeller ./src/main.cpp)
+add_executable(cpp-storyteller ./src/main.cpp)
 
-install(TARGETS Cpp-StoryTeller)
+install(TARGETS cpp-storyteller)
 
 enable_testing()
 add_test(NAME main COMMAND main)
