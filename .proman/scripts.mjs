@@ -1,40 +1,36 @@
 import { exec } from "node:child_process";
 import { platform } from "node:process";
-
-import Json from "../package.json" assert { type: "json" };
+import path from "path";
 
 export const runExec = () => {
-	const execFileName = Json.name;
+	const execFileName = "cpp-storyteller";
 	if (platform == "win32") {
-		exec(
-			`cd ./build/Debug/ && ${execFileName}.exe`,
-			(error, stdout, stderr) => {
-				if (error) {
-					console.log(`error: ${error.message}`);
-					return;
-				}
-				if (stderr) {
-					console.log(`stderr: ${stderr}`);
-					return;
-				}
-				console.log(stdout);
+		const execFilePath = path.resolve("./build/Debug/Cpp-StoryTeller.exe");
+		return;
+		exec(`${execFilePath}`, (error, stdout, stderr) => {
+			if (error) {
+				console.log(`error: ${error.message}`);
+				return;
 			}
-		);
+			if (stderr) {
+				console.log(`stderr: ${stderr}`);
+				return;
+			}
+			console.log(stdout);
+		});
 	} else if (platform == "linux") {
-		exec(
-			`cd ./build/Debug/ && ${execFileName}.exe`,
-			(error, stdout, stderr) => {
-				if (error) {
-					console.log(`error: ${error.message}`);
-					return;
-				}
-				if (stderr) {
-					console.log(`stderr: ${stderr}`);
-					return;
-				}
-				console.log(stdout);
+		const execFilePath = path.resolve("./build/Debug/Cpp-StoryTeller.sh");
+		exec(`${execFilePath}`, (error, stdout, stderr) => {
+			if (error) {
+				console.log(`error: ${error.message}`);
+				return;
 			}
-		);
+			if (stderr) {
+				console.log(`stderr: ${stderr}`);
+				return;
+			}
+			console.log(stdout);
+		});
 	} else {
 		console.log(`${platform} is not supported yet.`);
 	}

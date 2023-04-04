@@ -1,1 +1,1 @@
-node .proman/.main.mjs
+node .proman-cli.mjs $1

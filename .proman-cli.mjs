@@ -1,12 +1,12 @@
 #! /usr/bin/env node
 
 import { program } from "commander";
-import { runBuild } from "./scripts.mjs";
+import { runBuild, runExec } from "./.proman/scripts.mjs";
 
 program
 	.command("exec")
 	.description("Run the project's debug executable")
-	.action(runBuild);
+	.action(runExec);
 program
 	.command("build")
 	.description("Build the project binaries")

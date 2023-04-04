@@ -4,8 +4,8 @@
 	"description": "This project is a simple text-based story teller. Don't worry, it will only tell one story",
 	"private": true,
 	"scripts": {
-		"dev": "proman exec",
-		"build": "proman build"
+		"dev": "node .proman-cli.mjs exec",
+		"build": "node .proman-cli.mjs build"
 	},
 	"keywords": [
 		"cpp",
